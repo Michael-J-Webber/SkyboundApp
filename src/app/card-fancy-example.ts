@@ -18,7 +18,7 @@ export class CardFancyExample {
   quoteObject = new Quote("","0","",[],"","","","","","","");
   contents = new Contents([this.quoteObject]);
   copyright = new Copyright(0,"");
-  public results = new Qodhelper(this.success,this.contents,"",this.copyright);
+  results = new Qodhelper(this.success,this.contents,"",this.copyright);
   constructor(private quote:QuoteService){
     this.getQuote();
   };
