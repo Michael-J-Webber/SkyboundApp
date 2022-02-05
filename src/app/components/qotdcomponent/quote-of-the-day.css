@@ -1,5 +1,6 @@
 .example-card {
-    max-width: 60vw;
+    max-width: 80vw;
+    align-content: center;
   }
   
   .example-header-image {

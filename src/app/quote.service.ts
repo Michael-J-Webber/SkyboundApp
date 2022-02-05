@@ -12,4 +12,8 @@ export class QuoteService {
     //let url = 'https://quotes.rest/qod';
     return this.http.get('https://quotes.rest/qod');
   };
+
+  public getCategories(){
+    return this.http.get('https://quotes.rest/qod/categories.json');
+  }
 }

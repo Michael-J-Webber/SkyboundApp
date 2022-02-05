@@ -1,7 +1,7 @@
-import {Success} from '../models/success.class';
-import {Contents} from '../models/contents.class';
-import {Copyright} from '../models/copyright.class';
-export class Qodhelper {
+import {Success} from './success.class';
+import {Contents} from './contents.class';
+import {Copyright} from './copyright.class';
+export class Categoryhelper {
     public success: Success;
     public contents: Contents;
     public baseurl: string;

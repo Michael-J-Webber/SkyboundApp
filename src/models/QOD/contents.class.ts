@@ -1,4 +1,4 @@
-import {Quote} from '../models/quote.class'
+import {Quote} from './quote.class'
 export class Contents {   
     public quotes: Quote[];
     
