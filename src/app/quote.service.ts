@@ -14,6 +14,7 @@ export class QuoteService {
   };
 
   public getQuoteByCategory(cat : string){
+    console.log(cat, "cat string");
     //let url = 'https://quotes.rest/qod';
     return this.http.get('https://quotes.rest/qod.json?category=' + cat);
   };

@@ -328,7 +328,7 @@
 <div class="content" role="main">
   <mat-tab-group>
     <mat-tab label="Quote Of The Day"> <quote-of-the-day></quote-of-the-day> </mat-tab>
-    <mat-tab *ngFor="let category of catResults.contents.categories | keyvalue" label='{{ category.key }}'><app-category ></app-category></mat-tab>
+    <mat-tab *ngFor="let category of catResults.contents.categories | keyvalue" label='{{ category.key | titlecase }}'><app-category></app-category></mat-tab>
   </mat-tab-group>
 
   <!-- Highlight Card -->

@@ -16,6 +16,7 @@ export class CategoryComponent implements OnInit {
   contents = new Contents([this.quoteObject]);
   copyright = new Copyright(0,"");
   quoteResult = new Qodhelper(this.success,this.contents,"",this.copyright);
+  
   constructor(private quote:QuoteService){
     this.getQuoteByCategory(this.cat);
   };
