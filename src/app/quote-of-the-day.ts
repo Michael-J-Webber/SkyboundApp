@@ -9,11 +9,11 @@ import { Copyright } from 'src/models/copyright.class';
  * @title Card with multiple sections
  */
 @Component({
-  selector: 'card-fancy-example',
-  templateUrl: 'card-fancy-example.html',
-  styleUrls: ['card-fancy-example.css'],
+  selector: 'quote-of-the-day',
+  templateUrl: 'quote-of-the-day.html',
+  styleUrls: ['quote-of-the-day.css'],
 })
-export class CardFancyExample {
+export class QuoteOfTheDay {
   success = new Success(0);
   quoteObject = new Quote("","0","",[],"","","","","","","");
   contents = new Contents([this.quoteObject]);

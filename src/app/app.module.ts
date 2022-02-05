@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MaterialExampleModule} from '../material.module';
-import {CardFancyExample} from './card-fancy-example';
+import {QuoteOfTheDay} from './quote-of-the-day';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatNativeDateModule} from '@angular/material/core';
 import { RouterModule } from '@angular/router';
@@ -14,7 +14,7 @@ import { QuoteService } from './quote.service';
 @NgModule({
   declarations: [
     AppComponent,
-    CardFancyExample
+    QuoteOfTheDay
   ],
   imports: [
     BrowserModule,
@@ -28,6 +28,6 @@ import { QuoteService } from './quote.service';
     RouterModule
   ],
   providers: [QuoteService],
-  bootstrap: [AppComponent, CardFancyExample]
+  bootstrap: [AppComponent, QuoteOfTheDay]
 })
 export class AppModule {}
