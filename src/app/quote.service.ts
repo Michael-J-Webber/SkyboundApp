@@ -13,6 +13,10 @@ export class QuoteService {
     return this.http.get('https://quotes.rest/qod');
   };
 
+  public getQuoteByCategory(cat : string){
+    //let url = 'https://quotes.rest/qod';
+    return this.http.get('https://quotes.rest/qod.json?category=' + cat);
+  };
   public getCategories(){
     return this.http.get('https://quotes.rest/qod/categories.json');
   }
