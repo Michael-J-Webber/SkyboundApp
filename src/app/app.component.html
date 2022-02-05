@@ -326,7 +326,7 @@
 </div>
 
 <div class="content" role="main">
-
+<card-fancy-example></card-fancy-example>
   <!-- Highlight Card -->
   <div class="card highlight-card card-small">
 
@@ -425,7 +425,7 @@
   </div>
 
   <!-- Terminal -->
-  <div class="terminal" [ngSwitch]="selection.value">
+  <div class="terminal" *ngSwitch="selection.value">
       <pre *ngSwitchDefault>ng generate component xyz</pre>
       <pre *ngSwitchCase="'material'">ng add @angular/material</pre>
       <pre *ngSwitchCase="'pwa'">ng add @angular/pwa</pre>

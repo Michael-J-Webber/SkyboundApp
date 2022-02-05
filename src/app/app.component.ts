@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { QuoteService } from './quote.service'
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'SkyBoundApp';
+  constructor(private quote:QuoteService){
+    
+  };
 }
