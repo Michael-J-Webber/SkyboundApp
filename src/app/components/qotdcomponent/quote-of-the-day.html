@@ -1,26 +1,26 @@
 <mat-card class="example-card">
-    <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>{{qotdResults.contents.quotes[0].author}}</mat-card-title>
-      <mat-card-subtitle>{{qotdResults.contents.quotes[0].category}}</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image [src]='qotdResults.contents.quotes[0].background' alt="Photo of a for quote">
-    <mat-card-content>
-      <p>
-        {{qotdResults.contents.quotes[0].quote}}
-      </p>
-      <p>
-        ©{{qotdResults.copyright.year}} - {{qotdResults.copyright.url}}
-      </p>
-    </mat-card-content>
-    <mat-card-actions>
-      <mat-chip-list style="display: inline-block;" *ngFor="let tag of qotdResults.contents.quotes[0].tags" aria-label="Tags">
-        <mat-chip>#{{tag}}</mat-chip>        
-      </mat-chip-list>
-    </mat-card-actions>
-  </mat-card>
-  
-  
-  <!-- Copyright 2022 Google LLC. All Rights Reserved.
-      Use of this source code is governed by an MIT-style license that
-      can be found in the LICENSE file at https://angular.io/license -->
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{qotdResults.contents.quotes[0].author}}</mat-card-title>
+    <mat-card-subtitle>{{qotdResults.contents.quotes[0].category}}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image [src]='qotdResults.contents.quotes[0].background' alt="Photo of a for quote">
+  <mat-card-content>
+    <p>
+      {{qotdResults.contents.quotes[0].quote}}
+    </p>
+    <p>
+      ©{{qotdResults.copyright.year}} - {{qotdResults.copyright.url}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <mat-chip-list style="display: inline-block;" *ngFor="let tag of qotdResults.contents.quotes[0].tags" aria-label="Tags">
+      <mat-chip>#{{tag}}</mat-chip>        
+    </mat-chip-list>
+  </mat-card-actions>
+</mat-card>
+
+
+<!-- Copyright 2022 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at https://angular.io/license -->
