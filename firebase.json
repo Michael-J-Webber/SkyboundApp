@@ -9,7 +9,7 @@
     "rewrites": [
       {
         "source": "**",
-        "destination": "app/index.html"
+        "destination": "dist/sky-bound-app/index.html"
       }
     ]
   }
